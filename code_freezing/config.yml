@@ -1,0 +1,11 @@
+glass_breaker_group:
+- luizscofield
+- root
+
+freezing_dates:
+  winter_holidays:
+    from: 2025-07-16
+    to: 2025-07-31
+  summer_holidays:
+    from: 2025-12-10
+    to: 2026-01-05
