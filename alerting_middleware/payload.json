@@ -1,0 +1,84 @@
+{
+   "receiver":"fastapi",
+   "status":"firing",
+   "alerts":[
+      {
+         "status":"resolved",
+         "labels":{
+            "alertname":"container_memory_too_high",
+            "name":"monit-alertmanager",
+            "severity":"critical"
+         },
+         "annotations":{
+            "description":"monit-alertmanager memory usage is high",
+            "summary":"container memory usage is too high"
+         },
+         "startsAt":"2025-07-20T17:50:59.525Z",
+         "endsAt":"2025-07-20T17:53:44.525Z",
+         "generatorURL":"http://0c5c34c4d4aa:9090/graph?g0.expr=sum+by+%28name%29+%28container_memory_usage_bytes%7Bname%3D~%22monit-.%2A%22%7D%29+%3E+3.823616e%2B07\u0026g0.tab=1",
+         "fingerprint":"608fc340aed98d7d"
+      },
+      {
+         "status":"firing",
+         "labels":{
+            "alertname":"container_memory_too_high",
+            "name":"monit-cadvisor",
+            "severity":"critical"
+         },
+         "annotations":{
+            "description":"monit-cadvisor memory usage is high",
+            "summary":"container memory usage is too high"
+         },
+         "startsAt":"2025-07-20T17:50:59.525Z",
+         "endsAt":"0001-01-01T00:00:00Z",
+         "generatorURL":"http://0c5c34c4d4aa:9090/graph?g0.expr=sum+by+%28name%29+%28container_memory_usage_bytes%7Bname%3D~%22monit-.%2A%22%7D%29+%3E+3.823616e%2B07\u0026g0.tab=1",
+         "fingerprint":"b6d398b095107dcf"
+      },
+      {
+         "status":"firing",
+         "labels":{
+            "alertname":"container_memory_too_high",
+            "name":"monit-fastapi",
+            "severity":"critical"
+         },
+         "annotations":{
+            "description":"monit-fastapi memory usage is high",
+            "summary":"container memory usage is too high"
+         },
+         "startsAt":"2025-07-20T17:50:59.525Z",
+         "endsAt":"0001-01-01T00:00:00Z",
+         "generatorURL":"http://0c5c34c4d4aa:9090/graph?g0.expr=sum+by+%28name%29+%28container_memory_usage_bytes%7Bname%3D~%22monit-.%2A%22%7D%29+%3E+3.823616e%2B07\u0026g0.tab=1",
+         "fingerprint":"47b912f9eb299dae"
+      },
+      {
+         "status":"firing",
+         "labels":{
+            "alertname":"container_memory_too_high",
+            "name":"monit-prometheus",
+            "severity":"critical"
+         },
+         "annotations":{
+            "description":"monit-prometheus memory usage is high",
+            "summary":"container memory usage is too high"
+         },
+         "startsAt":"2025-07-20T17:50:59.525Z",
+         "endsAt":"0001-01-01T00:00:00Z",
+         "generatorURL":"http://0c5c34c4d4aa:9090/graph?g0.expr=sum+by+%28name%29+%28container_memory_usage_bytes%7Bname%3D~%22monit-.%2A%22%7D%29+%3E+3.823616e%2B07\u0026g0.tab=1",
+         "fingerprint":"d4d7bc5d635dde62"
+      }
+   ],
+   "groupLabels":{
+      
+   },
+   "commonLabels":{
+      "alertname":"container_memory_too_high",
+      "severity":"critical"
+   },
+   "commonAnnotations":{
+      "summary":"container memory usage is too high"
+   },
+   "externalURL":"http://bdff9858db82:9093",
+   "version":"4",
+   "groupKey":"{}:{}",
+   "truncatedAlerts":0
+}
